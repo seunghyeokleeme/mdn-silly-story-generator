@@ -26,8 +26,7 @@ function result() {
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
 
-  newstory = newstory.replace(":insertx:", xItem);
-  newstory = newstory.replace(":insertx:", xItem);
+  newstory = newstory.replace(/:insertx:/g, xItem);
   newstory = newstory.replace(":inserty:", yItem);
   newstory = newstory.replace(":insertz:", zItem);
 
